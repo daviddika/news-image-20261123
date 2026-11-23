@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World in One Image — 23 November 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1024px; height: 1024px; background: #f6f1e3; color: #141210;
+    font-family: Georgia, 'Times New Roman', serif; overflow: hidden; }
+  .page { width: 1024px; height: 1024px; padding: 8px 14px 6px; display: flex; flex-direction: column; }
+  /* Masthead */
+  .mast { background: #141210; color: #f6f1e3; display: flex; align-items: center;
+    justify-content: space-between; padding: 5px 12px; border-bottom: 4px solid #a81e1e; }
+  .mast .title { font-size: 28px; font-weight: 900; letter-spacing: 2px; }
+  .mast .tag { font-size: 11px; letter-spacing: 3px; color: #d8cfae; margin-top: 2px; }
+  .mast .date { background: #a81e1e; color: #fff; font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800; font-size: 15px; padding: 6px 10px; text-align: center; line-height: 1.25; }
+  .mast .date small { display: block; font-size: 9px; letter-spacing: 2px; font-weight: 700; }
+  /* Lead hero */
+  .lead { display: flex; gap: 12px; padding: 8px 0 6px; border-bottom: 2px solid #141210; }
+  .lead-text { flex: 1 1 560px; }
+  .kicker { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 800;
+    letter-spacing: 2.5px; color: #a81e1e; }
+  .lead-text h1 { font-size: 30px; line-height: 1.08; font-weight: 900; margin: 4px 0 6px; }
+  .lead-text p { font-size: 12.5px; line-height: 1.45; }
+  .lead-text p b { color: #a81e1e; }
+  .src { font-family: Arial, Helvetica, sans-serif; font-size: 9.5px; color: #55503f; margin-top: 6px; }
+  .src .conf { font-weight: 800; color: #141210; }
+  .lead-art { flex: 0 0 400px; }
+  /* Medium row */
+  .mid { display: flex; gap: 12px; padding: 6px 0; border-bottom: 2px solid #141210; }
+  .mid article { flex: 1; border-left: 3px solid #a81e1e; padding-left: 9px; }
+  .mid h2 { font-size: 14.5px; line-height: 1.15; font-weight: 900; margin: 3px 0 4px; }
+  .mid p { font-size: 10.5px; line-height: 1.4; }
+  .mid .icon { float: right; margin: 0 0 2px 6px; }
+  /* Brief grid */
+  .brief-head { display: flex; justify-content: space-between; align-items: baseline;
+    padding: 5px 0 3px; border-bottom: 1.5px solid #141210; }
+  .brief-head h2 { font-size: 15px; letter-spacing: 2px; font-weight: 900; }
+  .brief-head span { font-family: Arial, Helvetica, sans-serif; font-size: 9px; color: #55503f; }
+  .brief { flex: 1; display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 14px;
+    padding-top: 5px; align-content: start; }
+  .item { padding: 2.6px 0 2.6px 0; border-bottom: 1px dotted #b9b09a; }
+  .item .h { font-size: 10.6px; line-height: 1.28; font-weight: 700; }
+  .item .m { font-family: Arial, Helvetica, sans-serif; font-size: 8px; color: #6b6455; margin-top: 1px; }
+  .tag { display: inline-block; font-family: Arial, Helvetica, sans-serif; font-size: 7.5px;
+    font-weight: 800; letter-spacing: 0.5px; background: #141210; color: #f6f1e3;
+    padding: 1px 4px; margin-right: 4px; vertical-align: 1px; }
+  .tag.me { background: #a81e1e; } .tag.eu { background: #1e4d7a; } .tag.af { background: #7a5a12; }
+  .tag.ap { background: #2e6b34; } .tag.na { background: #5b3a7a; } .tag.la { background: #8a4d1f; }
+  .tag.oc { background: #0e7a6b; } .tag.gl { background: #44403a; }
+  /* Also today */
+  .also { background: #141210; color: #f6f1e3; padding: 5px 10px; margin-top: 5px; }
+  .also h2 { font-size: 12px; letter-spacing: 2px; color: #e8b23a; margin-bottom: 4px; }
+  .also .cols { display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 14px; }
+  .also .a { font-size: 10.5px; line-height: 1.3; padding: 1px 0; }
+  .also .a b { color: #e8b23a; font-family: Arial, Helvetica, sans-serif; font-size: 9px; }
+  /* Footer */
+  .foot { display: flex; justify-content: space-between; align-items: center;
+    border-top: 2px solid #141210; margin-top: 4px; padding-top: 4px;
+    font-family: Arial, Helvetica, sans-serif; font-size: 9px; color: #55503f; }
+  .foot .check { font-weight: 800; color: #141210; }
+  .foot .check b { color: #a81e1e; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="mast">
+    <div>
+      <div class="title">THE WORLD IN ONE IMAGE</div>
+      <div class="tag">FIFTY STORIES &middot; SEVEN REGIONS &middot; ONE DAY</div>
+    </div>
+    <div class="date"><small>MONDAY</small>23 NOVEMBER 2026</div>
+  </header>
+
+  <section class="lead">
+    <div class="lead-text">
+      <div class="kicker">LEAD &mdash; CLIMATE &middot; ANTALYA</div>
+      <h1>COP31 collapses: no deal as fossil fuels prove unmentionable</h1>
+      <p>After a record <b>44 hours of overtime</b>, the Antalya talks end on Sunday with
+      no agreement &mdash; the first COP to close without a deal since 2000. The EU, UK,
+      Panama and island states reject a final text that drops <b>every mention of
+      fossil fuels</b>; Saudi Arabia and Russia had refused any wording at all.
+      Unresolved items carry over to <b>COP32 in Addis Ababa in 2027</b>.</p>
+      <div class="src">Sources: Bytes Europe &middot; AP &middot; The Hindu BusinessLine &nbsp;|&nbsp;
+      <span class="conf">&#9679; HIGH</span></div>
+    </div>
+    <div class="lead-art">
+      <svg width="400" height="196" viewBox="0 0 400 196" xmlns="http://www.w3.org/2000/svg">
+        <rect width="400" height="196" fill="#101418"/>
+        <circle cx="200" cy="98" r="62" fill="#1d2f45"/>
+        <path d="M138 98 A 62 62 0 0 1 262 98" fill="none" stroke="#2e6b34" stroke-width="3"/>
+        <path d="M200 36 A 62 62 0 0 1 200 160" fill="none" stroke="#2e6b34" stroke-width="2"/>
+        <path d="M150 60 Q 200 88 250 60" fill="none" stroke="#2e6b34" stroke-width="2"/>
+        <path d="M150 136 Q 200 108 250 136" fill="none" stroke="#2e6b34" stroke-width="2"/>
+        <path d="M168 46 L 196 92 L 182 98 L 214 142 L 232 150" stroke="#a81e1e" stroke-width="4" fill="none"/>
+        <path d="M232 150 L 214 142" stroke="#a81e1e" stroke-width="4" fill="none"/>
+        <rect x="118" y="82" width="164" height="30" fill="#a81e1e" transform="rotate(-8 200 97)"/>
+        <text x="200" y="103" fill="#f6f1e3" font-family="Arial" font-size="19" font-weight="900" text-anchor="middle" transform="rotate(-8 200 97)" letter-spacing="3">NO DEAL</text>
+        <circle cx="352" cy="30" r="14" fill="#e8b23a" opacity="0.9"/>
+        <text x="12" y="188" fill="#d8cfae" font-family="Arial" font-size="10" letter-spacing="2">COP31 &middot; ANTALYA &mdash; MONDAY 23 NOV 2026</text>
+      </svg>
+    </div>
+  </section>
+
+  <section class="mid">
+    <article>
+      <svg class="icon" width="34" height="34" viewBox="0 0 34 34"><rect x="3" y="3" width="28" height="28" fill="#a81e1e"/><path d="M6 24 L 12 18 L 18 21 L 28 10" stroke="#f6f1e3" stroke-width="2.5" fill="none"/><circle cx="28" cy="10" r="2.5" fill="#e8b23a"/></svg>
+      <div class="kicker">THE GULF &mdash; HORMUZ</div>
+      <h2>Iran&rsquo;s tanker gamble: 14 ships wait to test the US blockade</h2>
+      <p>Tehran calls the blockade &ldquo;an act of war&rdquo; as a convoy masses off Kharg Island; Bahrain appeals to the UN Security Council; 25 tankers hit in a week; the blockade hits day 130.</p>
+      <div class="src">euronews / ISW / Reuters &middot; <span class="conf">&#9679; HIGH</span></div>
+    </article>
+    <article>
+      <svg class="icon" width="34" height="34" viewBox="0 0 34 34"><rect x="3" y="3" width="28" height="28" fill="#1e4d7a"/><path d="M8 24 V 12 M 17 24 V 8 M 26 24 V 15" stroke="#f6f1e3" stroke-width="3"/></svg>
+      <div class="kicker">POLITICS &mdash; WASHINGTON</div>
+      <h2>Democrats win largest House majority since 1992</h2>
+      <p>A North Carolina recount flip gives Democrats at least 258 seats &mdash; their biggest House majority in 34 years.</p>
+      <div class="src">BBC / One Turn &middot; <span class="conf">&#9679; HIGH</span></div>
+    </article>
+    <article>
+      <svg class="icon" width="34" height="34" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15" fill="#5b3a7a"/><text x="17" y="23" fill="#f6f1e3" font-family="Georgia" font-size="18" font-weight="900" text-anchor="middle">&pi;</text></svg>
+      <div class="kicker">SCIENCE &mdash; MATHS</div>
+      <h2>A proof of the Riemann Hypothesis &mdash; claimed</h2>
+      <p>Anthropic mathematician Levent Alp&ouml;ge and Claude claim to have solved the 160-year-old problem; the claim awaits independent verification.</p>
+      <div class="src">SimpleLife / Anthropic &middot; <span class="conf">&#9684; MEDIUM</span> (claim)</div>
+    </article>
+  </section>
+
+  <div class="brief-head">
+    <h2>WORLD IN BRIEF &mdash; 40 STORIES</h2>
+    <span>&#9679; HIGH = two+ major outlets or official source &nbsp;&middot;&nbsp; &#9684; MEDIUM = one outlet or attributed claim &nbsp;&middot;&nbsp; every item dated 23 Nov 2026</span>
+  </div>
+  <section class="brief">
+    <div class="item"><div class="h"><span class="tag eu">EUROPE</span>Ukraine: boy, 7, pulled alive from rubble after Russian strike</div><div class="m">BBC &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag eu">EUROPE</span>Russian drone hits 5-storey block in Dymer; 2 dead, 11 missing</div><div class="m">Al Jazeera / AP &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag eu">EUROPE</span>Poland: three Russian cruise missiles hit on Friday</div><div class="m">AFP &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag eu">EUROPE</span>Kremlin: fresh trilateral talks on Ukraine to come soon</div><div class="m">Dimsum Daily &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag eu">EUROPE</span>France&rsquo;s 2027 hopefuls both question Ukraine aid</div><div class="m">SimpleLife &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag eu">EUROPE</span>Austria targets net outflow in asylum as applications drop</div><div class="m">Dimsum Daily &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag eu">EUROPE</span>Thousands rally in Istanbul against media takeover</div><div class="m">One Turn &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag eu">EUROPE</span>NHS launches world&rsquo;s largest AI breast-cancer trial</div><div class="m">BBC &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag af">AFRICA</span>Russian frigate Merkury sinks in Benghazi after suspected drone hit</div><div class="m">AP / Reuters &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag af">AFRICA</span>South Sudan: 24 civilians killed in fresh violence</div><div class="m">AFP &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag af">AFRICA</span>Sudan: drone strikes hit Khartoum, damage UN facility</div><div class="m">AFP &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag af">AFRICA</span>Nigeria: 35 Fulanis killed in revenge attacks</div><div class="m">AFP &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag af">AFRICA</span>WHO chief pleads for peace in Ebola-hit DR Congo</div><div class="m">Al Jazeera / AFP &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag af">AFRICA</span>Ebola deaths pass 5,700; Uganda tightens 34 border districts</div><div class="m">CDC &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag me">MID EAST</span>Netanyahu, Eisenkot end coalition talks with no deal</div><div class="m">AFP &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag me">MID EAST</span>West Bank: settlers torch 12 Palestinian vehicles near Ramallah</div><div class="m">Aggregator &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag me">MID EAST</span>Saudi-led coalition intercepts Houthi missile</div><div class="m">AFP &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag me">MID EAST</span>Iran strike wounds two in Bahrain; Saudi condemns attacks</div><div class="m">AFP &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag na">N AMERICA</span>Trump calls Putin &lsquo;my friend&rsquo; after Shenzhen summit</div><div class="m">One Turn &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag gl">GLOBAL</span>US, China, Russia issue &lsquo;Declaration toward Peace&rsquo;</div><div class="m">SimpleLife &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag na">N AMERICA</span>US hawks urge Trump to strike Iran again; he says no rush</div><div class="m">SimpleLife &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag na">N AMERICA</span>Delta delays mount despite automation glitch fix</div><div class="m">Dimsum Daily &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag ap">ASIA-PAC</span>Nepal PM Balen Shah begins India visit; energy on agenda</div><div class="m">The Hindu &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag ap">ASIA-PAC</span>India, China hold 10-day talks to ease LAC tensions</div><div class="m">NewsBites &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag ap">ASIA-PAC</span>South Korea exports top $1 trillion for first time</div><div class="m">SimpleLife &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag ap">ASIA-PAC</span>Taiwan stocks swing 1,578 points; TSMC turns higher</div><div class="m">SimpleLife &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag ap">ASIA-PAC</span>Taiwan bans short selling at or below flat price</div><div class="m">SimpleLife &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag ap">ASIA-PAC</span>Suspected Chinese hackers use AI framework Cairn on universities</div><div class="m">SimpleLife &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag ap">ASIA-PAC</span>Indonesia: 24 body bags recovered from factory fire</div><div class="m">Aggregator &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag ap">ASIA-PAC</span>North Korea&rsquo;s Kim: security, not supremacy, is the goal</div><div class="m">AFP &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag ap">ASIA-PAC</span>Mongolia parliament approves president&rsquo;s resignation</div><div class="m">One Turn &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag ap">ASIA-PAC</span>Japan: Shuri Castle main hall restored, opens Monday</div><div class="m">Aggregator &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag oc">OCEANIA</span>M 6.5 quake strikes the Vanuatu region</div><div class="m">USGS &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag oc">OCEANIA</span>Albanese: COP31 failure a sign of &lsquo;difficult times&rsquo;</div><div class="m">AFP &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag la">LATAM</span>Bolsonaro in intensive care with intestinal obstruction</div><div class="m">AFP &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag la">LATAM</span>Colombia asks X to suspend ex-president Petro&rsquo;s account</div><div class="m">One Turn &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag la">LATAM</span>Fl&aacute;vio Bolsonaro lands in Miami after election defeat</div><div class="m">BBC &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag la">LATAM</span>Trump team won&rsquo;t back Fl&aacute;vio as &lsquo;rightful leader&rsquo;</div><div class="m">Reuters &middot; &#9679; HIGH</div></div>
+    <div class="item"><div class="h"><span class="tag gl">GLOBAL</span>Astronomers confirm tiny asteroid is Earth&rsquo;s mini-moon</div><div class="m">Dimsum Daily &middot; &#9684; MEDIUM</div></div>
+    <div class="item"><div class="h"><span class="tag na">N AMERICA</span>San Francisco rides an AI boom &mdash; but fears a crash</div><div class="m">BBC &middot; &#9684; MEDIUM</div></div>
+  </section>
+
+  <section class="also">
+    <h2>ALSO TODAY</h2>
+    <div class="cols">
+      <div class="a"><b>EUROPE &middot;</b> Italian jeweller Paolo Bulgari dies aged 89</div>
+      <div class="a"><b>EUROPE &middot;</b> FIFA to confirm UK as 2035 Women&rsquo;s World Cup host</div>
+      <div class="a"><b>EUROPE &middot;</b> Tyson Fury film reveals schizophrenia diagnosis</div>
+      <div class="a"><b>EUROPE &middot;</b> Man Utd lose to Liverpool under new boss Pochettino</div>
+      <div class="a"><b>EUROPE &middot;</b> Compass plans New York listing, FT reports</div>
+      <div class="a"><b>EUROPE &middot;</b> Burnham: EU deal could make next decade &lsquo;much better&rsquo;</div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="check"><b>DATE CHECK &mdash;</b> Every story above happened, or was first reported, on Monday 23 November 2026 (any time zone). 22 Nov stories appear only as 23 Nov follow-ups.</div>
+    <div>50 stories &middot; 7 regions &middot; 12 fields &middot; make.fun news-image-20261123</div>
+  </footer>
+
+</div>
+</body>
+</html>
