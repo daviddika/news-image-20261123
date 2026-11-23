@@ -20,6 +20,10 @@ import { chmodSync, copyFileSync, mkdirSync, readFileSync, statSync } from 'node
 import { join } from 'node:path';
 
 const PNG_MAGIC = Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]);
+// IEND chunk: zero-length chunk, type "IEND", CRC 0xAE426082.
+const PNG_IEND = Buffer.from([
+  0x00, 0x00, 0x00, 0x00, 0x49, 0x45, 0x4e, 0x44, 0xae, 0x42, 0x60, 0x82,
+]);
 const MAX_BYTES = 1024 * 1024;
 const MAX_SIDE_PX = 1024;
 
@@ -43,6 +47,9 @@ if (width > MAX_SIDE_PX || height > MAX_SIDE_PX) {
 }
 if (width === 0 || height === 0) {
   fail('zero width or height');
+}
+if (!image.subarray(image.length - 12).equals(PNG_IEND)) {
+  fail('missing IEND trailer (truncated file)');
 }
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
